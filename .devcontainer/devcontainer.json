@@ -1,0 +1,21 @@
+ {
+ "name":"WorkWeb",
+ "dockerFile":"Dockerfile",
+
+  "packageList": [
+    "scikit-learn"
+  ],
+  "resourcePath": "C:\\Users\\r-sai\\CPD-HomePage",
+
+ "customizations": {
+   "vscode":{
+      "extensions": ["MS-CEINTL.vscode-language-pack-ja"],
+      "settings": {
+            "git.autofetch": true,
+            "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+            "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+            "dev.containers.executeInWSL": true
+      }
+    }
+  }
+}

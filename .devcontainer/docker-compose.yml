@@ -1,0 +1,10 @@
+services:
+  your-service-name-here:
+    build: .
+    volumes:
+      - .:/workspace
+      - /workspace/.venv
+volumes:
+  uv-cache:
+  
+  
