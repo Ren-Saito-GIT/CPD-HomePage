@@ -1,0 +1,140 @@
+/* ===== Teamsページ専用スタイル ===== */
+.teams-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+.departments {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+.department {
+  background: none;
+  border-radius: 0;
+  padding: 24px 0;
+  box-shadow: none;
+  border: none;
+}
+.department-title {
+  color: #00eaff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.member {
+  text-align: center;
+  cursor: pointer;
+  width: 160px;
+  transition: transform 0.15s;
+}
+.member:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+.member img {
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00eaff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  background: #181a1b;
+}
+.member img:hover {
+  box-shadow: 0 0 0 4px #ff0000;
+  border-color: #ff0000;
+}
+.member-name {
+  margin-top: 12px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05em;
+  letter-spacing: 0.03em;
+}
+/* ===== ポップアップ ===== */
+.profile-modal-bg {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.profile-modal {
+  background: #23272a;
+  border-radius: 12px;
+  padding: 32px 40px;
+  color: #fff;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  position: relative;
+  text-align: center;
+}
+.profile-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 1.5em;
+  color: #00eaff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.profile-modal-close:hover {
+  color: #ff0000;
+}
+.profile-modal img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #00eaff;
+  margin-bottom: 16px;
+  background: #181a1b;
+}
+#modalName {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #00eaff;
+}
+#modalProfile {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+@media (max-width: 900px) {
+  .departments {
+    grid-template-columns: 1fr;
+  }
+  .teams-section {
+    padding: 16px 0;
+  }
+}
+@media (max-width: 600px) {
+  .members {
+    gap: 16px;
+  }
+  .member {
+    width: 120px;
+  }
+  .member img {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-modal {
+    padding: 20px 8px;
+    min-width: 180px;
+  }
+}
