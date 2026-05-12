@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teams | Cryptid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="teams.css">
+</head>
+<body>
+  <header>
+    <h1 style="margin:0;padding:0;">
+      <a href="main.html" style="display:inline-block;">
+        <img src="images/red1.1.png" alt="Cryptidロゴ" style="height:60px;width:auto;display:block;margin:0 auto;">
+      </a>
+    </h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="result.html">Result</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="teams-section">
+      <h2 style="color:#ff0000;">部門別メンバー紹介</h2>
+      <div class="departments">
+        <!-- 部門1 -->
+        <div class="department">
+          <div class="department-title">FPS部門</div>
+          <div class="members">
+            <div class="member" data-profile="fps1">
+              <img src="images/member/member1.jpg" alt="選手A">
+              <div class="member-name">選手A</div>
+            </div>
+            <div class="member" data-profile="fps2">
+              <img src="images/member_fps2.png" alt="選手B">
+              <div class="member-name">選手B</div>
+            </div>
+            <div class="member" data-profile="fps3">
+              <img src="images/member_fps3.png" alt="ストリーマーC">
+              <div class="member-name">ストリーマーC</div>
+            </div>
+          </div>
+        </div>
+        <!-- 部門2 -->
+        <div class="department">
+          <div class="department-title">MOBA部門</div>
+          <div class="members">
+            <div class="member" data-profile="moba1">
+              <img src="images/member_moba1.png" alt="選手D">
+              <div class="member-name">選手D</div>
+            </div>
+            <div class="member" data-profile="moba2">
+              <img src="images/member_moba2.png" alt="選手E">
+              <div class="member-name">選手E</div>
+            </div>
+            <div class="member" data-profile="moba3">
+              <img src="images/member_moba3.png" alt="ストリーマーF">
+              <div class="member-name">ストリーマーF</div>
+            </div>
+          </div>
+        </div>
+        <!-- 部門3 -->
+        <div class="department">
+          <div class="department-title">格闘ゲーム部門</div>
+          <div class="members">
+            <div class="member" data-profile="fight1">
+              <img src="images/member_fight1.png" alt="選手G">
+              <div class="member-name">選手G</div>
+            </div>
+            <div class="member" data-profile="fight2">
+              <img src="images/member_fight2.png" alt="選手H">
+              <div class="member-name">選手H</div>
+            </div>
+            <div class="member" data-profile="fight3">
+              <img src="images/member_fight3.png" alt="ストリーマーI">
+              <div class="member-name">ストリーマーI</div>
+            </div>
+          </div>
+        </div>
+        <!-- 部門4 -->
+        <div class="department">
+          <div class="department-title">ストリーマー部門</div>
+          <div class="members">
+            <div class="member" data-profile="stream1">
+              <img src="images/member_stream1.png" alt="ストリーマーJ">
+              <div class="member-name">ストリーマーJ</div>
+            </div>
+            <div class="member" data-profile="stream2">
+              <img src="images/member_stream2.png" alt="ストリーマーK">
+              <div class="member-name">ストリーマーK</div>
+            </div>
+            <div class="member" data-profile="stream3">
+              <img src="images/member_stream3.png" alt="ストリーマーL">
+              <div class="member-name">ストリーマーL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- プロフィールモーダル -->
+  <div class="profile-modal-bg" id="profileModalBg">
+    <div class="profile-modal" id="profileModal">
+      <span class="profile-modal-close" id="profileModalClose">&times;</span>
+      <img id="modalImg" src="" alt="プロフィール画像">
+      <div id="modalName" style="font-size:1.2em;font-weight:bold;margin-bottom:8px;"></div>
+      <div id="modalProfile"></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>ナビゲーション</h3>
+        <ul>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="result.html">Result</a></li>
+          <li><a href="sponsor.html">Sponsor</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>SNS</h3>
+        <ul>
+          <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Cryptid. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // プロフィールデータ
+    const profiles = {
+      fps1: { name: '選手A', img: 'images/member_fps1.png', profile: 'FPS部門のエース。高い反射神経と戦術眼でチームを牽引。' },
+      fps2: { name: '選手B', img: 'images/member_fps2.png', profile: '安定したプレイと冷静な判断力が持ち味の選手。' },
+      fps3: { name: 'ストリーマーC', img: 'images/member_fps3.png', profile: 'FPSゲーム配信で人気のストリーマー。' },
+      moba1: { name: '選手D', img: 'images/member_moba1.png', profile: 'MOBA部門のリーダー。チームワーク重視のプレイが特徴。' },
+      moba2: { name: '選手E', img: 'images/member_moba2.png', profile: '柔軟な戦略で勝利をもたらすプレイヤー。' },
+      moba3: { name: 'ストリーマーF', img: 'images/member_moba3.png', profile: 'MOBAゲームの実況・解説で活躍中。' },
+      fight1: { name: '選手G', img: 'images/member_fight1.png', profile: '格闘ゲーム部門のトッププレイヤー。' },
+      fight2: { name: '選手H', img: 'images/member_fight2.png', profile: '多彩なコンボと読み合いが武器。' },
+      fight3: { name: 'ストリーマーI', img: 'images/member_fight3.png', profile: '格闘ゲーム配信で人気。' },
+      stream1: { name: 'ストリーマーJ', img: 'images/member_stream1.png', profile: '雑談・ゲーム配信で幅広く活動。' },
+      stream2: { name: 'ストリーマーK', img: 'images/member_stream2.png', profile: 'ユーモアあふれるトークが魅力。' },
+      stream3: { name: 'ストリーマーL', img: 'images/member_stream3.png', profile: '多ジャンル配信で注目を集める。' },
+    };
+    // メンバークリックでモーダル表示
+    document.querySelectorAll('.member').forEach(el => {
+      el.addEventListener('click', () => {
+        const key = el.getAttribute('data-profile');
+        const data = profiles[key];
+        if (data) {
+          document.getElementById('modalImg').src = data.img;
+          document.getElementById('modalName').textContent = data.name;
+          document.getElementById('modalProfile').textContent = data.profile;
+          document.getElementById('profileModalBg').style.display = 'flex';
+        }
+      });
+    });
+    // 閉じるボタン
+    document.getElementById('profileModalClose').onclick = function() {
+      document.getElementById('profileModalBg').style.display = 'none';
+    };
+    // 背景クリックで閉じる
+    document.getElementById('profileModalBg').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
+</body>
+</html>

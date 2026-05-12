@@ -6,58 +6,100 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../CSS/CPD.CSS">
 	<title>Cryptid</title>
-	   
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	   <header>
-		   <nav>
-			   <ul class="nav-left">
-				   <li><a href="member.html">Member</a></li>
-				   <li><a href="#sponsor">Sponsor</a></li>
+	<!-- ===== ヘッダー ===== -->
+	<header>
+		<h1 style="margin:0;padding:0;">
+			<a href="main.html" style="display:inline-block;">
+				<img src="images/red1.1.png" alt="Cryptidロゴ" style="height:60px;width:auto;display:block;margin:0 auto;">
+			</a>
+		</h1>
+		<nav>
+			<ul class="nav-menu">
+				<li><a href="teams.html">Teams</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="result.html">Result</a></li>
+				<li><a href="sponsor.html">Sponsor</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- ===== チーム宣材動画 ===== -->
+	<section id="video">
+		<div class="video-container">
+			<video autoplay loop muted playsinline poster="">
+				<source src="./videos/sample.mp4" type="video/mp4">
+				お使いのブラウザはHTML5 videoタグに対応していません。
+			</video>
+		</div>
+	</section>
+
+	<!-- ===== チームニュース ===== -->
+	<section id="news">
+		<h2>チームニュース</h2>
+		<div class="news-grid">
+			<div class="news-card">
+				<div class="news-date">2026/04/01</div>
+				<div class="news-title">新メンバー加入のお知らせ</div>
+				<div class="news-description">チームに新しいメンバーが加入しました。</div>
+			</div>
+			<div class="news-card">
+				<div class="news-date">2026/03/28</div>
+				<div class="news-title">大会出場決定！</div>
+				<div class="news-description">次の大会への出場が決定しました。</div>
+			</div>
+			<div class="news-card">
+				<div class="news-date">2026/03/15</div>
+				<div class="news-title">公式グッズ販売開始</div>
+				<div class="news-description">公式グッズの販売を開始しました。</div>
+			</div>
+			<div class="news-card">
+				<div class="news-date">2026/03/10</div>
+				<div class="news-title">新しいサポーター決定</div>
+				<div class="news-description">新しいサポーターが決定しました。</div>
+			</div>
+			<div class="news-card">
+				<div class="news-date">2026/03/05</div>
+				<div class="news-title">練習会開催のお知らせ</div>
+				<div class="news-description">チーム内の練習会を開催します。</div>
+			</div>
+			<div class="news-card">
+				<div class="news-date">2026/02/28</div>
+				<div class="news-title">前シーズン総括レポート</div>
+				<div class="news-description">前シーズンの総括レポートを公開しました。</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== フッター ===== -->
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>ナビゲーション</h3>
+				<ul>
+					<li><a href="teams.html">Teams</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="result.html">Result</a></li>
+					<li><a href="sponsor.html">Sponsor</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul>
-				   	<div class="nav-logo">
-			 			<a href="#Cryptid"><img src="../img/red1.2.png"></a></li>
-				   	</div>
-				<ul class="nav-right">
-				   <li><a href="#news">News</a></li>
-				   <li><a href="#other">Other</a></li>
-			   </ul>
-		   </nav>
-	   </header>
-
-	   <!-- ①広告となる画像または動画（仮画像） -->
-	   <section id="member">
-		   <h2>広告</h2>
-		   <div class="ad-area">
-			   <img src="https://via.placeholder.com/600x200?text=広告エリア" alt="広告画像">
-			   <!-- 動画の場合は <video> タグに差し替え可 -->
-		   </div>
-	   </section>
-
-	   <!-- ③チームで発信しているNews -->
-	   <section id="news">
-		   <h2>チームNews</h2>
-		   <ul class="news-list">
-			   <li>2026/04/01　新メンバー加入のお知らせ</li>
-			   <li>2026/03/28　大会出場決定！</li>
-			   <li>2026/03/15　公式グッズ販売開始</li>
-		   </ul>
-	   </section>
-
- 		<!-- ②スポンサー情報 -->
-	   	<section id="sponsor">
-		   <h2>スポンサー</h2>
-		   <div class="sponsors">
-			   <div class="sponsor">スポンサーA株式会社</div>
-			   <div class="sponsor">スポンサーB Inc.</div>
-			   <div class="sponsor">スポンサーC合同会社</div>
-		   </div>
-	   </section>
-
-	   <!-- Otherセクション（仮） -->
-	   <section id="other">
-		   <h2>Other</h2>
-		   <p>その他の情報は今後追加予定です。</p>
-	   </section>
+			</div>
+			<div class="footer-section">
+				<h3>SNS</h3>
+				<ul>
+					<li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+					<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+					<li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2026 Cryptid. All rights reserved.</p>
+		</div>
+	</footer>
 </body>
 </html>
