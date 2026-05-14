@@ -94,7 +94,7 @@ h2 {
 }
 
 .nav-menu a {
-	color: #00eaff;
+	color: #ffffff;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.1em;
@@ -177,11 +177,13 @@ footer {
 	margin: 0 auto 32px;
 	display: flex;
 	gap: 64px;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-left: 40px;
 }
 
 .footer-section h3 {
-	color: #ff0000;
+	color: #ffffff;
 	font-size: 1.2em;
 	margin-bottom: 16px;
 }
@@ -197,7 +199,7 @@ footer {
 }
 
 .footer-section a {
-	color: #00eaff;
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 1em;
 	transition: color 0.2s;
@@ -208,6 +210,55 @@ footer {
 	text-decoration: underline;
 }
 
+/* フッター左：ページ遷移リンク（縦並び） */
+.footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.footer-links a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1em;
+	transition: color 0.2s;
+}
+.footer-links a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* フッター右：SNSアイコン（横並び） */
+.footer-sns {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: 40px;
+	gap: 12px;
+}
+.footer-sns span {
+	color: #ffffff;
+	font-size: 1.2em;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+.sns-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.sns-icon {
+	width: 32px;
+	height: 32px;
+	transition: transform 0.2s, filter 0.2s;
+	filter: grayscale(0.2) brightness(0.95);
+}
+.sns-icon:hover {
+	transform: scale(1.15);
+	filter: grayscale(0) brightness(1.2);
+}
 .footer-bottom {
 	max-width: 1800px;
 	margin: 0 auto;
@@ -242,18 +293,23 @@ footer {
 	.footer-content {
 		flex-direction: column;
 		gap: 32px;
+		align-items: stretch;
+	}
+	.footer-sns {
+		align-items: flex-start;
+		margin-top: 16px;
 	}
 }
 
 @media (max-width: 480px) {
-	.news-grid {
-		grid-template-columns: 1fr;
+	.footer-content {
+		flex-direction: column;
+		gap: 32px;
+		align-items: stretch;
 	}
-
-	header,
-	section {
-		margin: 16px auto;
-		padding: 16px;
+	.footer-sns {
+		align-items: flex-end;
+		margin-top: 16px;
 	}
 
 	.nav-menu {
